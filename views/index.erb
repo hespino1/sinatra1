@@ -7,7 +7,10 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
+	<% if @name != nil %>
 	<h1>Hola <%=@name%>!</h1>
-	
+	<%else%>
+	<h1>Hola desconocido!</h1>
+	<%end%>
 </body>
 </html>
