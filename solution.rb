@@ -1,10 +1,6 @@
 require 'sinatra'
 
-get	'/:name' do
-	@name = params[:name]
+get	'/' do
+	@name = params[:nombre]
 	erb :index	
-end
-
-get "/" do 
-	"Hola desconocido!"
 end
